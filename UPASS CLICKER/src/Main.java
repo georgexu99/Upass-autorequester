@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 import org.openqa.selenium.By;
@@ -9,15 +7,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 
-
-
-
 public class Main {
 	
-
 	public static void main (String[] args) {
-		
-	
 		
 		System.setProperty("webdriver.gecko.driver", "/Users/georgexu/Desktop/libraries/geckodriver");
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
@@ -62,51 +54,8 @@ public class Main {
 		
 		driver.findElement(By.xpath("//*[id= 'checkbox']")).click();
 		driver.findElement(By.id("request_pass")).click();
-		
-		
-		
 		} catch(Exception e){
 			System.out.println(e);
 			}
-		
-		
-		}
-}
-			
-	
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		/*try {
-		WebDriver driver = new FirefoxDriver();
-		
-		driver.get("https://upassbc.translink.ca/");
-			
-			Thread.sleep(5000);
-			driver.findElement(By.id("PsiId")).click();
-			
-		}catch(Exception e)
-		{
-			System.out.println(e);
-			
-			
-		}
-		
-		
-		
-		
-		
 	}
 }
-*/
